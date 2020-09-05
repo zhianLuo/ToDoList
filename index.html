@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDolist</title>
+    <link rel="stylesheet" href="../../publick/reset.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <section>
+                <span>{{title}}</span>
+                <input type="text" placeholder="添加ToDo" v-model:value='inpVal' @keyup.enter='add'>
+            </section>
+        </header>
+        <main>
+            <h2>正在进行
+                <span v-text='todolist.length'></span>
+            </h2>
+            <ol>
+                <li v-for='(item,index) in todolist'>
+                    <input type="checkbox" @click.prevent='finish(index)' value="true">
+                    <input class="txt" v-model='item.text' @change='todoRevise()' >
+                    <a href="#" @click.prevent='deltodo(index)'>-</a>
+                </li>
+            </ol>
+            <h2>已经完成
+                <span v-text='donelist.length'></span>
+            </h2>
+            <ul>
+                <li v-for='(item,index) in donelist'>
+                    <input type="checkbox" @click.prevent='reAdd(index)' checked>
+                    <input class="txt txt2" v-model='item.text' @change='doneRevise()'>
+                    <a href="#" @click.prevent='deldone(index)'>-</a>
+                </li>
+            </ul>
+        </main>
+        <footer>Copyright © 2014 todolist.cn 
+            <span @click='delAll' title="点击清空列表！">clear</span>
+        </footer>
+    </div>
+</body>
+<script src="../../publick/vue.js"></script>
+<script src="index.js"></script>
+
+</html>

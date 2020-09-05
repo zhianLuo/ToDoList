@@ -1,0 +1,145 @@
+/* 
+
+
+*/
+html,
+body {
+    font-size: 16px;
+    background: #CDCDCD;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+    background: rgba(47, 47, 47, 0.98);
+    height: 50px;
+}
+
+header section {
+    width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header section span {
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    color: #DDD;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header section input {
+    float: right;
+    width: 60%;
+    height: 24px;
+    margin-top: 12px;
+    text-indent: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+    border: none;
+}
+
+main {
+    width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin: 20px auto;
+    font-weight: bold;
+    position: relative;
+}
+
+main h2 span {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    border-radius: 20px;
+    background: #E6E6FA;
+    line-height: 22px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+main li {
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+main li input:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+
+}
+
+main li input:nth-child(2) {
+    float: left;
+    width: 505px;
+    height: 24px;
+    font-size: 16px;
+    /* background: pink; */
+    border: none;
+    margin-top: 4px;
+}
+/* .txt2{
+    background: #E6E6E6;
+} */
+main li a {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    border-radius: 14px;
+    border: 6px double #FFF;
+    background: #CCC;
+    line-height: 14px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul li {
+    background: #E6E6E6;
+}
+
+footer {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer span {
+    color: red;
+    cursor: pointer;
+}
